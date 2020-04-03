@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(174, 255, 241);
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+#form {
+  min-height: 300px;
+  min-width: 300px;
+  /* border-radius: 16px; */
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  /* border-radius: 6px; */
+  border: 1px solid rgb(175, 175, 175);
+  outline: none;
+  padding-left: 10px;
+}
+
+.input_field {
+  margin: 10px;
+}
+
+
+label {
+  font-size: 6px;
+  letter-spacing: 1px;
+}
+
+textarea {
+  background: rgb(255, 255, 255);
+  /* border-radius: 6px; */
+  min-width: 100%;
+  padding-left: 5px;
+}
+
+#submit_button {
+  background: rgb(0, 132, 255);
+  color: #fff;
+  height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+
+#submit_button:hover {
+  background: rgba(0, 132, 255, 0.85);
+}
+
+#submit_button:active {
+  box-shadow: 1px 1px 1px black;
+}
