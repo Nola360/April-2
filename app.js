@@ -1,21 +1,23 @@
-function Validation() {
-  var name = document.getElementById('name').value;
-  var lastname = document.getElementById('lastname').value;
+function validation() {
+  var name = document.getElementById('first_name').value;
+  var lastname = document.getElementById('last_name').value;
   var phone = document.getElementById('phone').value;
   var email = document.getElementById('email').value;
   var message = document.getElementById('message').value;
-  var error_message = document.getElementById('error_message').value;
+  var error_message = document.getElementById('error_message');
 
   error_message.style.padding = '10px';
 
   if (name.length < 2) {
-    test = "Name Must Be 6 or More Characters";
+    text = "Name Must Be 6 or More Characters";
     error_message.innerHTML = text;
     return false;
+  } else {
+    console.log('not working!');
   }
 
   if (lastname.length < 2) {
-    test = "Name Must Be 6 or More Characters";
+    text = "Name Must Be 6 or More Characters";
     error_message.innerHTML = text;
     return false;
   }
@@ -32,12 +34,15 @@ function Validation() {
     return false;
   }
 
-  if (message.length <= 140) {
+  if (message.length <= 14) {
     text = 'Please Enter More Than 140 Characters';
     error_message.innerHTML = text;
     return false;
   }
 
+  alert('Form Submitted Successfully!')
+  return false;
 
 }
 
+console.log(error_message);
