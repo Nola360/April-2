@@ -40,7 +40,9 @@ function validation() {
     return false;
   }
 
-  alert('Form Submitted Successfully!')
+  error_message.style.backgroundColor = 'green';
+  error_message.style.color = 'white';
+  error_message.innerText = 'Form Submitted Successfully!';
   return false;
 
 }
