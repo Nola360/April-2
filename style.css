@@ -6,21 +6,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
   height: 100vh;
-  font-family: 'Josefin Sans', sans-serif;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(174, 255, 241);
+  background: #fece0c;
 }
 
 h2 {
   text-align: center;
   font-size: 32px;
   margin-bottom: 15px;
+  color: #fff;
+  /* text-shadow: 1px 1px black; */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902
 }
 
 #form {
@@ -45,7 +51,7 @@ input {
 }
 
 .input_field {
-  margin: 10px;
+  margin: 8px;
 }
 
 
@@ -58,22 +64,32 @@ textarea {
   background: rgb(255, 255, 255);
   /* border-radius: 6px; */
   min-width: 100%;
-  padding-left: 5px;
+  padding: 5px 0 0 10px;
+  height: 80px;
 }
 
 #submit_button {
-  background: rgb(0, 132, 255);
-  color: #fff;
-  height: 32px;
+  background: #fece0c;
+  color: rgb(0, 0, 0);
+  /* height: 32px; */
   font-size: 16px;
   cursor: pointer;
   box-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
 }
 
 #submit_button:hover {
-  background: rgba(0, 132, 255, 0.85);
+background: #ffdf61;
 }
 
 #submit_button:active {
   box-shadow: 1px 1px 1px black;
+}
+
+.wrapper #error_message {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #fe8b8e;
+  font-size: 14px;
+  transition: all 0.5s ease;
 }
